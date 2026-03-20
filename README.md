@@ -46,3 +46,26 @@ This repository contains practical lab exercises for network security analysis u
 
 ##  Conclusion
 This lab demonstrates the difference between encrypted and unencrypted traffic. Encryption is essential for secure communication and user privacy. Wireshark provides a powerful way to visualize these concepts and reinforces the importance of strong authentication and encryption in cybersecurity.
+
+Results and Analysis
+
+
+  1.  Approximately how many packets were captured?
+Around 17229 packets were captured during the experiment. This shows a significant amount of network activity across different protocols.
+2.List three protocols observed during the experiment.
+•	DNS → used for resolving domain names (e.g., queries for google.com).
+•	HTTP → unencrypted web traffic, visible in clear text (e.g., GET /connecttest.txt).
+•	TLS/HTTPS → encrypted communication ensuring confidentiality (e.g., TLS handshake with Client Hello, Server Hello).
+(Additionally, TCP was observed as the transport layer establishing reliable connections, and QUIC appeared in the TLS/UDP capture.)
+3.Why is encryption important when browsing the internet?
+•	Encryption ensures that sensitive information (passwords, personal data, browsing activity) cannot be read by attackers.
+•	It protects confidentiality and integrity, preventing interception or modification of data.
+•	Without encryption, traffic is exposed in clear text, making users vulnerable to surveillance and attacks.
+4.What type of information could attackers obtain from unencrypted traffic?
+•	Visited websites and URLs (from DNS and HTTP requests).
+•	Login credentials or personal data if sent via HTTP.
+•	Files or messages transmitted without protection.
+•	Essentially, attackers can reconstruct a user’s browsing activity and intercept sensitive information.
+
+
+
